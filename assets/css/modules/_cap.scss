@@ -1,0 +1,53 @@
+.cap {
+    .categoryAndDate {
+        width: 744px;
+        padding-left: 19px;
+        padding-right: 19px;
+        box-sizing: border-box;
+        align-items: center;
+        .solve_time {
+            height: 36px;
+            width: 280px;
+            background-color: rgba(243, 243, 243, 1);
+            border-radius: 4px;
+            cursor: pointer;
+            border-color: transparent;
+        }
+        .category {
+            height: 36px;
+            width: 402px;
+            background-color: rgba(243, 243, 243, 1);
+            border-radius: 4px;
+            cursor: pointer;
+            border-color: transparent;
+        }
+    }
+    .react-select-container {
+        width: 240px;
+    }
+    .react-select__indicator-separator {
+        display: none;
+    }
+    .react-select__control {
+        max-height: 40px;
+        box-shadow: none;
+        border-color: #e4e4e4;
+    }
+    .react-select__placeholder {
+        font-size: 14px;
+        color: #767676;
+    }
+    .react-select__single-value {
+        font-size: 14px;
+        letter-spacing: 0.08px;
+        font-weight: 600;
+    }
+    .react-select__menu {
+        .react-select__menu-list {
+            .react-select__option {
+                font-size: 14px;
+            }
+        }
+    }
+}
+

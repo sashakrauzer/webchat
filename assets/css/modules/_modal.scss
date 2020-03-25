@@ -1,0 +1,173 @@
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #FAFAFA;
+    padding: 20px 30px;
+    box-shadow: 0 0 5px gray;
+    button {
+        height: 44px;
+        padding-left: 38px;
+        padding-right: 38px;
+        background-color: #4a90e2;
+        border-radius: 22px;
+        font-size: 14px;
+        color: white;
+        border: 2px solid #4a90e2;
+        cursor: pointer;
+        box-sizing: border-box;
+        &:hover {
+            background-color: rgba(255, 255, 255, 1);
+            color: rgba(74, 144, 226, 1);
+        }
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.resultModal {
+    box-sizing: border-box;
+    width: 615px;
+    background-color: white;
+    padding: 30px 0 0;
+    h2 {
+        font-size: 24px;
+        font-weight: 600;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    ul {
+        margin: 0 0 28px;
+        padding: 0 40px 0 0;
+        list-style: none;
+        li {
+            position: relative;
+            padding-left: 215px;
+            margin-bottom: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 1.38;
+            overflow: hidden;
+            word-break: break-all;
+            &::before {
+                font-size: 12px;
+                letter-spacing: 0.24px;
+                color: #767676;
+            }
+        }
+        .fio {
+            &::before {
+                content: 'ФИО клиента';
+                position: absolute;
+                left: 40px;
+            }
+        }
+        .phone {
+            &::before {
+                content: 'Номер телефона';
+                position: absolute;
+                left: 40px;
+            }
+        }
+        .date {
+            &::before {
+                content: 'Дата встречи';
+                position: absolute;
+                left: 40px;
+            }
+        }
+        .dateWithTime {
+            &::before {
+                content: 'Дата контакта';
+                position: absolute;
+                left: 40px;
+            }
+        }
+        .comment {
+            &::before {
+                content: 'Комментарий';
+                position: absolute;
+                left: 40px;
+            }
+        }
+        .address {
+            &::before {
+                content: 'Место встречи';
+                position: absolute;
+                left: 40px;
+            }
+            span {
+                font-size: 14px;
+                color: #a2a2a2;
+                font-weight: normal;
+            }
+        }
+    }
+    .footer {
+        background-color: #fafafa;
+        box-shadow: inset 0 1px 0 0 #cacaca;
+        height: 104px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        button {
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+    }
+}
+
+
+
+.modalCloseDialog {
+    h2 {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    textarea {
+        height: 140px;
+        width: 440px;
+        background-color: rgba(243, 243, 243, 1);
+        border-radius: 4px;
+        margin-bottom: 20px;
+    }
+}
+
+.modalOpenDialog {
+    h2 {
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 24px;
+        margin-bottom: 20px;
+    }
+    .input {
+        height: 40px;
+        width: 440px;
+        background-color: rgba(243, 243, 243, 1);
+        border-radius: 4px;
+        margin-bottom: 20px;
+        border: 1px solid #DDDDDD;
+    }
+}
+
+.modalFilter {
+    select {
+        height: 36px;
+        width: 340px;
+        background-color: rgba(243, 243, 243, 1);
+        border-radius: 4px;
+        cursor: pointer;
+        display: block;
+        margin-bottom: 20px;
+    }
+}

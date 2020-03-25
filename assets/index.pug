@@ -1,0 +1,31 @@
+- function makeHash() {
+-    var text = "";
+-    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+-
+-    for( var i=0; i < 10; i++ ){
+-        text += possible.charAt(Math.floor(Math.random() * possible.length));
+-    }
+-    return text;
+- }
+
+- var css = 'css/main.css';
+- var js = process.env.NODE_ENV == 'production' ? 'js/app.js?' + makeHash() : 'js/app.js';
+
+doctype html
+html(lang="en")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    title
+    link(rel="manifest" href="manifest.json")
+    link(rel="icon" type="image/x-icon" href="favicon.ico")
+    link(rel='stylesheet', href=css)
+    link(rel='stylesheet', href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,700&amp;subset=cyrillic-ext")
+    link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css")
+    header
+        .row
+    main
+        #app
+    footer
+        .row
+    script(type='text/javascript', src=js)
